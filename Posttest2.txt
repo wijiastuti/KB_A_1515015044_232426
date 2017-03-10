@@ -1,0 +1,18 @@
+POSTTEST 2 KECERDASAN BUATAN 
+
+Nama : Wiji Astuti
+
+Nim  : 1515015044
+
+	MACAM-MACAM KEYWOARD DI VISUAL PROLOG
+
+1.Facts		: Untuk memulai section facts
+2.Goal		: Menyatakan jenis variabel atau argumen.
+3.Predicates 	: Memberikan gambaran akan kata-kata yang ada dalam program.
+4.Clause	: Memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk menjadikan solusi dari pertanyaan yang diberikan.
+5.Domain	: Menyatakan jenis variabel atau argumen.
+6.Nocopy	: Normalnya pemanggilan fakta akan mengikat variabel ke sebuah string atau ke sebuah object jamak.
+7.Single	: Menentukan hanya satu fakta dari predikat yang akan selalu ada.
+8.Global	: Menentukan bahwa section facts adalah globaldalam pemrograman.
+9.Nondeterm	: Menentukan bahwa kemungkinan ada sejumlah fakta daru suatu predikat sepanjang program berjalan(default).
+10.Determ	: Menentukan bahwa hanya boleh ada satu fakta dari suatu predikat sepanjang program berjalan.
