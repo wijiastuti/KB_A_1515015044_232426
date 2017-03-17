@@ -22,7 +22,7 @@ Tugas postes 2
 	   Y di jual.
 	f. suka(_Apa).		= Setiap orang suka apa.
 2. Ubah bahasa natural berikut kedalam bahasa prolog :
-	a. Ricky mempunyai habi bermain catur	= hobi(ricky,catur)
+	a. Ricky mempunyai hobi bermain catur	= hobi(ricky,catur)
 	b. Embang orangnya pemalas		= pemalas(embang)
 	c. Yusida seorang vegetarian		= vegetarian(yusida)
 	d. Kusidar pandai bermain gitar		= pandai(Kusidar_gitar)
@@ -33,6 +33,9 @@ Tugas postes 2
 	g. Seseorang dikatakan baik jika mempunyai sifat penyayang dan dermawan.
 	  => dikatakan(orang,baik):-sifat(orang,penyayang),sifat(orang,dermawan).
 	h. Seseorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi.
-	  => dikatakan(orang,pintar):-dapat(matematika,tinggi);dapat(ipa,tinggi);dapat(ips,tinggi).
+	  => dikatakan(orang,pintar):nilai tinggi(matematika,tinggi);dapat(ipa,tinggi);dapat(ips,tinggi).
 	i. Setiap orang pasti mati.
 	  => orang(_mati).
+
+tetap_predikat
+berubah_parameterssssssss
