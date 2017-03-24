@@ -1,0 +1,42 @@
+
+
+
+
+
+predicates
+  buy_car(symbol,symbol) - determ (i,o)
+  car(symbol,symbol,integer) - nondeterm (i,o,o)
+  colors(symbol,symbol) - nondeterm (i,i)
+
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,mean),!,
+	Price > 25000.
+
+  car(maserati,green,25000).
+  car(corvette,black,24000).
+  car(corvette,red,26000).
+  car(porsche,red,24000).
+
+  colors(red,sexy).
+  colors(black,mean).
+  colors(green,preppy).
+
+goal
+  buy_car(corvette,Y).
+
+
+
+penjelasannya :
+- disini program mencari mobil dengan model dan warna, dan mobil sendiri harus memilik sebuah model,warna dan harga
+mobil yang akan di kategorikan yaitu sexy yang dimana sexy tersebut mempunyai warna merah dan aturan harga > 25000 tidak terbaca karena ada not.
+- bagian dari sisi lacak balioknya yaitu
+ car(maserati,green,25000). /model mobil ini bukan termasuk kategori sexy karena warnanya green/(lacak balik)
+
+ car(corvette,black,24000)./model mobil ini bukan termasuk kategori sexy karena warnayanya black/(lacak balik) 
+
+ car(corvette,red,26000)./model mobil ini termasuk memenuhi kategori sexy /
+
+-sedangkan rules sendiri tidak dijalankan karena ada fungsi notnya yang berfungsi untuk berhenti sampai pada rules kedua
+-dan akhirnya rules tersebut terpenuhi dan program akan berhenti pada goal .
